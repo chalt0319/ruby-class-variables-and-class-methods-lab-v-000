@@ -34,12 +34,12 @@ class Song
   
   def genre_count 
     hash = {}
-    @@genres.each do |genre|
-      hash[genre] = [] unless hash[genre]
-      when hash[genre] == hash[genre]
+    @@genres.each do |key|
+      hash[key] = [] unless hash[key]
+      if hash[key] == hash[key]
         counter += 1 
       end 
-      hash[genre] << counter
+      hash[key] << counter
   end 
   
 end 
