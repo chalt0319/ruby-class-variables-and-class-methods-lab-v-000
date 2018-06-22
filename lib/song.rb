@@ -18,13 +18,13 @@ class Song
   end 
   
   def self.artists
-    @@artists.each do |artist|
-      new_array = []
-      if !@@artists.include?(artist)
-        new_array << artist 
-      end 
-      new_array
-    end 
+    # @@artists.each do |artist|
+    #   new_array = []
+    #   if !@@artists.include?(artist)
+    #     new_array << artist 
+    #   end 
+    #   new_array
+    # end 
   end 
   
   def genre_count
