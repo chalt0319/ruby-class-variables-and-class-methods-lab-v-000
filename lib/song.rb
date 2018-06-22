@@ -9,7 +9,7 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1 
-    @@artists << artist 
+    @@artists << @artist 
     @@genres << @genre
   end 
   
@@ -18,13 +18,6 @@ class Song
   end 
   
   def self.artists
-    # @@artists.each do |artist|
-    #   new_array = []
-    #   if !@@artists.include?(artist)
-    #     new_array << artist 
-    #   end 
-    #   new_array
-    # end 
     @@artists.uniq
   end 
   
