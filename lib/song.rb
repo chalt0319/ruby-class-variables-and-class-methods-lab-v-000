@@ -40,6 +40,7 @@ class Song
         counter += 1 
       end 
       hash[key] << counter
+    end 
+    hash 
   end 
-  
 end 
