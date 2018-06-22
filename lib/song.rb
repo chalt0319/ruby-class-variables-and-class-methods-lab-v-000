@@ -29,9 +29,11 @@ class Song
     hash = {}
     @@genres.each do |genre|
       if hash.keys.include?(genre)
+        hash[genre] += 1
+      else 
         hash[genre] = 1 
       end 
-      hash[key] << counter
+      
     end 
     hash 
   end 
