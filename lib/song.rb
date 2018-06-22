@@ -25,6 +25,7 @@ class Song
     #   end 
     #   new_array
     # end 
+    @@artists.uniq
   end 
   
   def genre_count
