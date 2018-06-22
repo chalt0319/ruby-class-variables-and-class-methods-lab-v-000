@@ -28,12 +28,12 @@ class Song
   def self.genre_count 
     hash = {}
     @@genres.each do |genre|
+      binding.pry 
       if hash.keys.include?(genre)
         hash[genre] += 1
       else 
         hash[genre] = 1 
       end 
-      
     end 
     hash 
   end 
