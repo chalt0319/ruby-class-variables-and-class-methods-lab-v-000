@@ -34,11 +34,18 @@ class Song
         hash[genre] = 1 
       end 
     end 
-    binding.pry 
     hash 
   end 
   
   def self.artist_count
-    
+    hash = {}
+    @@artists.each do |artist|
+      if hash.keys.include?(artist)
+        hash[artist] += 1
+      else 
+        hash[artist] = 1 
+      end 
+    end 
+    hash 
   end 
 end 
