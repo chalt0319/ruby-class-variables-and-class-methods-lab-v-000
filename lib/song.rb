@@ -36,7 +36,10 @@ class Song
     hash = {}
     @@genres.each do |genre|
       hash[genre] = [] unless hash[genre]
-      hash[genre] << 
+      when hash[genre] == hash[genre]
+        counter += 1 
+      end 
+      hash[genre] << counter
   end 
   
 end 
