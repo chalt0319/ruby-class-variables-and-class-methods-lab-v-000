@@ -26,6 +26,7 @@ class Song
       new_array
     end 
   end 
+  
   def genre_count
     
   end 
